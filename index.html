@@ -1,5 +1,7 @@
 
-<!DOCTYPE html>
+
+
+
 
 <html lang="ru">
 <head data-build="v0.7.6-1754851961">
@@ -2396,5 +2398,28 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
   <!-- Slider functionality for category bar -->
   <script src="assets/chip-slider.js"></script>
+      <style>
+    /* Custom override: Pink uppercase chips with minimal spacing */
+    .category-bar .chip {
+        background: var(--accent-pink) !important;
+        border: 1px solid var(--accent-pink) !important;
+        color: #fff !important;
+        text-transform: uppercase !important;
+        font-size: 24px !important;
+        font-weight: 900 !important;
+        letter-spacing: 0 !important;
+        gap: 2px !important;
+        margin-right: 2px !important;
+    }
+    .category-bar .chip img,
+    .category-bar .chip svg {
+        display: none !important;
+    }
+    .category-bar .chip:hover,
+    .category-bar .chip.active {
+        background: var(--accent-pink) !important;
+    }
+    </style>
+
 </body>
 </html>
