@@ -288,6 +288,21 @@ nav.menu-groups.category-bar .chip .label {
   touch-action: none !important;
 }
 
+/* Override chips to be pink uppercase with bold uppercase and white text */
+.category-bar.menu-groups .chip {
+    background: var(--accent-pink) !important;
+    border: 1px solid var(--accent-pink) !important;
+        color: #fff !important;
+    text-transform: uppercase !important;
+      letter-spacing: 0 !important;
+}
+
+.category-bar.menu-groups .chip:hover,
+.category-bar.menu-groups .chip.active {
+    background: var(--accent-pink) !important;
+}
+
+
 /* Cursor when dragging slider on menu-groups */
 .category-bar.menu-groups.dragging .chip-underline .thumb {
   cursor: grabbing !important;
